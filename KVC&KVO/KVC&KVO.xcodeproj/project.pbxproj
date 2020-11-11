@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C865A611255BE483001292A9 /* Clock.m in Sources */ = {isa = PBXBuildFile; fileRef = C865A610255BE483001292A9 /* Clock.m */; };
+		C865A615255BEA19001292A9 /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C865A614255BEA19001292A9 /* KVOViewController.m */; };
+		C865A619255BEA2B001292A9 /* KVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C865A618255BEA2B001292A9 /* KVCViewController.m */; };
 		C87EEDE725496197000D554C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C87EEDE625496197000D554C /* AppDelegate.m */; };
 		C87EEDEA25496197000D554C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C87EEDE925496197000D554C /* SceneDelegate.m */; };
 		C87EEDED25496197000D554C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C87EEDEC25496197000D554C /* ViewController.m */; };
@@ -21,6 +24,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C865A60F255BE483001292A9 /* Clock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Clock.h; sourceTree = "<group>"; };
+		C865A610255BE483001292A9 /* Clock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Clock.m; sourceTree = "<group>"; };
+		C865A613255BEA19001292A9 /* KVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOViewController.h; sourceTree = "<group>"; };
+		C865A614255BEA19001292A9 /* KVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOViewController.m; sourceTree = "<group>"; };
+		C865A617255BEA2B001292A9 /* KVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCViewController.h; sourceTree = "<group>"; };
+		C865A618255BEA2B001292A9 /* KVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCViewController.m; sourceTree = "<group>"; };
 		C87EEDE225496197000D554C /* KVC&KVO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KVC&KVO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C87EEDE525496197000D554C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C87EEDE625496197000D554C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -81,6 +90,10 @@
 				C87EEDE925496197000D554C /* SceneDelegate.m */,
 				C87EEDEB25496197000D554C /* ViewController.h */,
 				C87EEDEC25496197000D554C /* ViewController.m */,
+				C865A613255BEA19001292A9 /* KVOViewController.h */,
+				C865A614255BEA19001292A9 /* KVOViewController.m */,
+				C865A617255BEA2B001292A9 /* KVCViewController.h */,
+				C865A618255BEA2B001292A9 /* KVCViewController.m */,
 				C87EEDEE25496197000D554C /* Main.storyboard */,
 				C87EEDF125496199000D554C /* Assets.xcassets */,
 				C87EEDF325496199000D554C /* LaunchScreen.storyboard */,
@@ -97,6 +110,8 @@
 				C87EEE01254961E7000D554C /* Person.m */,
 				C87EEE05254961F7000D554C /* Pet.h */,
 				C87EEE06254961F7000D554C /* Pet.m */,
+				C865A60F255BE483001292A9 /* Clock.h */,
+				C865A610255BE483001292A9 /* Clock.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -181,7 +196,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C865A611255BE483001292A9 /* Clock.m in Sources */,
 				C87EEE1125497518000D554C /* NSObject+KVC.m in Sources */,
+				C865A619255BEA2B001292A9 /* KVCViewController.m in Sources */,
 				C87EEDED25496197000D554C /* ViewController.m in Sources */,
 				C87EEDE725496197000D554C /* AppDelegate.m in Sources */,
 				C87EEE02254961E7000D554C /* Person.m in Sources */,
@@ -189,6 +206,7 @@
 				C87EEDF825496199000D554C /* main.m in Sources */,
 				C87EEE0B25496DE0000D554C /* NSObject+Print.m in Sources */,
 				C87EEDEA25496197000D554C /* SceneDelegate.m in Sources */,
+				C865A615255BEA19001292A9 /* KVOViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
