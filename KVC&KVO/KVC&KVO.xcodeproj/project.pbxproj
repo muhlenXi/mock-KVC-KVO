@@ -21,6 +21,7 @@
 		C87EEE07254961F7000D554C /* Pet.m in Sources */ = {isa = PBXBuildFile; fileRef = C87EEE06254961F7000D554C /* Pet.m */; };
 		C87EEE0B25496DE0000D554C /* NSObject+Print.m in Sources */ = {isa = PBXBuildFile; fileRef = C87EEE0A25496DE0000D554C /* NSObject+Print.m */; };
 		C87EEE1125497518000D554C /* NSObject+KVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C87EEE1025497518000D554C /* NSObject+KVC.m */; };
+		C8FEA971255CDA4300380887 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FEA970255CDA4300380887 /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,8 @@
 		C87EEE0A25496DE0000D554C /* NSObject+Print.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Print.m"; sourceTree = "<group>"; };
 		C87EEE0F25497518000D554C /* NSObject+KVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVC.h"; sourceTree = "<group>"; };
 		C87EEE1025497518000D554C /* NSObject+KVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVC.m"; sourceTree = "<group>"; };
+		C8FEA96F255CDA4300380887 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		C8FEA970255CDA4300380887 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				C87EEE00254961E7000D554C /* Person.h */,
+				C8FEA96F255CDA4300380887 /* User.h */,
+				C8FEA970255CDA4300380887 /* User.m */,
 				C87EEE01254961E7000D554C /* Person.m */,
 				C87EEE05254961F7000D554C /* Pet.h */,
 				C87EEE06254961F7000D554C /* Pet.m */,
@@ -204,6 +209,7 @@
 				C87EEE02254961E7000D554C /* Person.m in Sources */,
 				C87EEE07254961F7000D554C /* Pet.m in Sources */,
 				C87EEDF825496199000D554C /* main.m in Sources */,
+				C8FEA971255CDA4300380887 /* User.m in Sources */,
 				C87EEE0B25496DE0000D554C /* NSObject+Print.m in Sources */,
 				C87EEDEA25496197000D554C /* SceneDelegate.m in Sources */,
 				C865A615255BEA19001292A9 /* KVOViewController.m in Sources */,
