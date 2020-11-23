@@ -6,15 +6,22 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BaseClock.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Clock : NSObject
+@interface Clock : BaseClock
+{
+    @public
+    NSString *openDate;
+}
 
 @property (nonatomic,assign) NSInteger  hour;
 @property (nonatomic,assign) NSInteger  minute;
 @property (nonatomic,assign) NSInteger  second;
 @property (nonatomic,strong) NSString *clockName;
+
+@property (nonatomic,strong) NSMutableArray *openedClocks;
 
 @end
 

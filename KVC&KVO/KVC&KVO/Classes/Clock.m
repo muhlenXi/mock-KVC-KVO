@@ -9,6 +9,15 @@
 
 @implementation Clock
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.openedClocks = [NSMutableArray array];
+    }
+    return self;
+}
+
 - (void)dealloc
 {
     NSLog(@"Clock dealloc 释放了");
