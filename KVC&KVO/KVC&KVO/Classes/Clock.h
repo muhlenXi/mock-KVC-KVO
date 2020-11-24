@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,assign) NSInteger  minute;
 @property (nonatomic,assign) NSInteger  second;
 @property (nonatomic,strong) NSString *clockName;
+@property (nonatomic,strong) NSString *clockMark;
 
 @property (nonatomic,strong) NSMutableArray *openedClocks;
 

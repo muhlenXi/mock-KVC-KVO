@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSObject (KVC)
 
-- (void) mx_setValue:(id)value forKey:(NSString *)key;
+- (void)mx_setValue:(id)value forKey:(NSString *)key;
 - (id)mx_valueForKey:(NSString *)key;
 
 @end
