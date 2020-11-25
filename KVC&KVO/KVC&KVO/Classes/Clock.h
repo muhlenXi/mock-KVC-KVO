@@ -22,6 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,strong) NSString *clockName;
 @property (nonatomic,strong) NSString *clockMark;
 
+@property (nonatomic,copy) NSString *clockTime;
+
 @property (nonatomic,strong) NSMutableArray *openedClocks;
 
 @end

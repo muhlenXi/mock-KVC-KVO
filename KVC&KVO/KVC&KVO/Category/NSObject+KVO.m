@@ -42,6 +42,7 @@ static NSString *const kMXBlockOAssiociateKey = @"kMXBlockOAssiociateKey";
     }
 }
 
+// 生成中间类
 - (Class)createChildClassWithKeyPath:(NSString *)keyPath {
     NSString *oldClassName = NSStringFromClass([self class]);
     NSString *newClassName = [NSString stringWithFormat:@"MXKVONotifying_%@", oldClassName];
@@ -74,6 +75,7 @@ static NSString *const kMXBlockOAssiociateKey = @"kMXBlockOAssiociateKey";
     return newClass;
 }
 
+// 重写 dealloc 方法
 static void mxDealloc(id self, SEL _cmd) {
     Class class = [self class];
     object_setClass(self, class);
@@ -83,6 +85,7 @@ static void mxDealloc(id self, SEL _cmd) {
     NSLog(@"%@", [NSString stringWithFormat:@"%@ 释放了", NSStringFromClass([self class])]);
 }
 
+// 重写 class 方法
 static Class mxClass(id self, SEL _cmd) {
     return class_getSuperclass(object_getClass(self));
 }

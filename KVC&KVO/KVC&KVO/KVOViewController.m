@@ -29,11 +29,13 @@
     
     self.clock = [[Clock alloc] init];
     
-    NSLog(@"Before: class -> %@, className -> %s",NSStringFromClass([self.clock class]), object_getClassName(self.clock));
-    [self.clock mx_addObserver:self forKeyPath:@"clockName" handleBlock:^(id newValue) {
-        NSLog(@"new name: %@", newValue);
-    }];
-    NSLog(@"After: class -> %@, className -> %s",NSStringFromClass([self.clock class]), object_getClassName(self.clock));
+    [self.clock addObserver:self forKeyPath:@"clockTime" options:NSKeyValueObservingOptionNew context: NULL];
+    
+//    NSLog(@"Before: class -> %@, className -> %s",NSStringFromClass([self.clock class]), object_getClassName(self.clock));
+//    [self.clock mx_addObserver:self forKeyPath:@"clockName" handleBlock:^(id newValue) {
+//        NSLog(@"new name: %@", newValue);
+//    }];
+//    NSLog(@"After: class -> %@, className -> %s",NSStringFromClass([self.clock class]), object_getClassName(self.clock));
 //    [self.clock mx_addObserver:self forKeyPath:@"clockMark" handleBlock:^(id observer, id newValue) {
 //        NSLog(@"new mark: %@", newValue);
 //    }];
@@ -68,12 +70,12 @@
 //    NSLog(@"%s", object_getClassName(self.clock));
 }
 
-//- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
-//    NSLog(@"%@", change);
-//}
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+    NSLog(@"%@", change);
+}
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-//    self.clock.second = self.clock.second + 1;
+    self.clock.second = self.clock.second + 1;
 //    self.clock.clockName = @"morning call";
 //
 //    self.user.nickname = @"muhlenXi";
@@ -85,8 +87,8 @@
 //    [[self.clock mutableArrayValueForKey:@"openedClocks"] replaceObjectAtIndex:0 withObject:@"evening call"];
     
 //    self.clock->openDate = @"2020-12-20";
-    self.clock.clockName = @"hello";
-    self.clock.clockMark = @"get up !!!!!";
+//    self.clock.clockName = @"hello";
+//    self.clock.clockMark = @"get up !!!!!";
 }
 
 - (void)printClasses:(Class)cls {
@@ -123,9 +125,13 @@
     free(methodList);
 }
 
-- (void)dealloc
-{
+- (void)dealloc {
     NSLog(@"KVOViewController dealloc");
+    
+//    [self.clock removeObserver:self forKeyPath:@"clockName"];
+//    [self.clock removeObserver:self forKeyPath:@"second"];
+    
+    [self.clock removeObserver:self forKeyPath:@"clockTime"];
 }
 
 @end
